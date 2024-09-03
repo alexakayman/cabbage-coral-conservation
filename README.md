@@ -8,6 +8,27 @@ A Blender simulation using fractal algorithms for repeating interlocking structu
 
 ![Artificial Cabbage Coral for Shoreline Conservation | Blender Simulation by AK](https://cdn.prod.website-files.com/63dd97e00f08cd412b218ad9/66ba58f9146bf60b6e28ec11_coral.png)
 
+#### Running The Simulation
+
+0. Make sure you have blender installed
+1. Open this repo in your local environment
+2. Navigate to Shading. If the textures turn pink, you may have to remap the textures.
+   ![Node Editor - Open Image and Select The Corresponding File Name from this Repo](/figures/texture%20node%20editor.png)
+3. Click Viewport Shading. Click Spacebar to wake up the ocean. Your Blender should look like this:
+   ![Blender Preview](/figures/workspace%20preview.png)
+
+#### Make Your Own Coral
+
+Assuming you've completed the above, switch to layout. Let's make your own coral with the differential growth model!
+
+1. Navigate to File > Preferences > Add Ons > Install by selecting the [Differential Model ZIP file](/model/Differential%20Growth%20Coral%20Model.zip) (no need to unzip)!
+2. Add a cylinder.
+3. Using the Data selector, create a vertex group of the cylinder's top vertices.
+4. Open the object Modifiers panel and scroll to Differential Growth. You should see a new panel editor that looks like:
+   ![Differential Growth Panel](/figures/differential%20growth.png)
+5. Start clicking Add Step. Your cylinder edges should start to grow upwards with the default settings!
+6. Enjoy! Play around with increasing step size for different coral shapes.
+
 ## Building The Shoreline Reef
 
 ### Custom Cabbage Coral Concrete Aggregate
@@ -17,7 +38,7 @@ The cabbage corals will be closest to [Green Artificial Reefs (GARs)](https://ww
 - 5-10% of cement with mussel shells
 - 10-20% of sand with mussel shells
 - 25-100% of steel reinforcement with eucalyptus fibers
-  ![GAR3](https://example.com/GAR3.png)
+  ![GAR3](/figures//GAR3.png)
 
 ### Material Consideration
 
